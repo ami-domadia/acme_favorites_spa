@@ -8,9 +8,9 @@ const path = require('path')
 const PORT = process.env.PORT || 3000
 
 app.use(morgan('dev'))
-
-app.use('/', router)
 app.use(express.static(path.join(__dirname,'dist')))
+app.use('/', router)
+
 
 syncAndSeed()
 .then((app.listen(PORT, ()=>{
