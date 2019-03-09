@@ -6,11 +6,11 @@
   "scripts": {
     "heroku-postbuild": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "postinstall": "npm run webpack",
     "webpack": "webpack",
     "webpack:dev": "npm run webpack -- --mode=development --watch",
-    "start:dev": "npm run webpack:dev & DATABASE_URL=postgres://localhost/acme_favorites_spa nodemon server.js --ignore src/ --ignore dist/"
+    "start:dev": "npm run webpack:dev & DATABASE_URL=postgres://localhost:5432/acme_favorites_spa node server.js --ignore src/ --ignore dist/"
   },
   "repository": {
     "type": "git",
