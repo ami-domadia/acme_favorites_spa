@@ -1,7 +1,7 @@
 {
   "name": "acme_favorites_spa",
   "version": "1.0.0",
-  "description": "heroku link:",
+  "description": "heroku link:https://fathomless-shelf-40208.herokuapp.com/",
   "main": "index.js",
   "scripts": {
     "heroku-postbuild": "webpack",

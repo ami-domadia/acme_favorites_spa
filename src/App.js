@@ -18,6 +18,7 @@ export default class App extends Component{
             <div id="router">
                 <Route path='/users' component={Users} />
                 <Route path='/things' component={Things} />
+                <Route exact path='/' component={Users} />
             </div>
             </div>
             </HashRouter>
