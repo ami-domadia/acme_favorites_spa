@@ -24,7 +24,7 @@ const Nav = ({location, usercount, thingcount}) => {
             {links.map((obj)=>(
                 <li key={obj.link}>
                 {console.log('I am in nav', obj.link)}
-                 <Link to={obj.link} className={`nav-link ${obj.link.startsWith(pathname) ? ' active': ''}`}>{obj.link.slice(1)} {obj.count}</Link>
+                 <Link to={obj.link} className={`nav-link ${obj.link.startsWith(pathname) ? 'active': ''}`}>{obj.link.slice(1)} {obj.count}</Link>
                 </li>
             ))} 
         </ul>

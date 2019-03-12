@@ -39,7 +39,7 @@ export default class App extends Component{
                                 Nav({location, usercount: this.state.users.length, thingcount: this.state.things.length}))}/>
                 <Route path='/users' render={(()=>Users(this.state.users))} />
                 <Route path='/things' render={(()=>Things(this.state.things))} />
-                {/* <Route  path='/' render={(()=>Users(this.state.users))} /> */}
+                <Route exact path='/' render={(()=>Users(this.state.users))} />
             </div>
             </div>
             </HashRouter>
